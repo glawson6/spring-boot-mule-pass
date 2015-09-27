@@ -48,11 +48,21 @@
                             maxRedelivery="-1"
                             numberOfConsumers="1"/>
                             -->
+    <http:listener-config name="httpConfig" host="0.0.0.0" port="${http.port}" protocol="HTTP"
+                          doc:name="HTTP Listener Configuration">
+    </http:listener-config>
     <flow name="main">
        <vm:inbound-endpoint path="in" />
         <!-- TODO add your service component here. This can also be a Spring bean using <spring-object bean="name"/> -->
        <append-string-transformer message=" Received" />
         <vm:outbound-endpoint path="out"/>
+    </flow>
+
+    <flow name="getHTTPTest">
+        <http:listener config-ref="httpConfig" doc:name="User data" path="test" allowedMethods="GET">
+        </http:listener>
+        <logger category="getHTTPTest" level="INFO" message="Hello Mule"/>
+        <set-payload value="Welcome Paas Mule!"/>
     </flow>
     <!--
     <flow name="jmsInboundFlow1">
