@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.taptech.paas</groupId>
-    <artifactId>spring-boot-mule</artifactId>
+    <artifactId>spring-boot-mule-pass</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
