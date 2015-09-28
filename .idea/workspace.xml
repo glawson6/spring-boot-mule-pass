@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87bd48ba-890a-49cf-b9f5-734868c19f8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.mule/objectstore/82f597f0-653a-11e5-b4e5-de09be16862d/partition-descriptor" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-boot-mule-pass-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/spring-boot-mule-pass-1.0-SNAPSHOT.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="spring-boot-mule-paas.iws" />
@@ -57,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.026785715" vertical-offset="0" max-vertical-offset="560">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -625,12 +622,12 @@
       <option name="number" value="Default" />
       <updated>1443372038638</updated>
       <workItem from="1443372044479" duration="3662000" />
-      <workItem from="1443388277237" duration="1701000" />
+      <workItem from="1443388277237" duration="1771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5363000" />
+    <option name="totallyTimeSpent" value="5433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1011" y="169" width="1440" height="838" extended-state="0" />
@@ -804,7 +801,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.026785715" vertical-offset="0" max-vertical-offset="560">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding />
         </state>
       </provider>
