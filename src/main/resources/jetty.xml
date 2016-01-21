@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_0.dtd">
+
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+
+
+    <Set name="handler">
+        <New id="Handlers" class="org.eclipse.jetty.server.handler.HandlerCollection">
+            <Set name="handlers">
+                <Array type="org.eclipse.jetty.server.Handler">
+                    <Item>
+                        <New class="org.eclipse.jetty.server.handler.ContextHandlerCollection">
+                            <Set name="handlers">
+                                <Array type="org.eclipse.jetty.server.Handler">
+                                    <!--
+                                    <Item>
+                                        <New class="org.eclipse.jetty.server.handler.ContextHandler">
+                                            <Set name="contextPath">/</Set>
+                                            <Set name="resourceBase"><SystemProperty name="jetty.home" default="."/>/target/classes/public</Set>
+                                            <Set name="handler">
+                                                <New class="org.eclipse.jetty.server.handler.ResourceHandler">
+                                                    <Set name="welcomeFiles">
+                                                        <Array type="String">
+                                                            <Item>index.html</Item>
+                                                        </Array>
+                                                    </Set>
+                                                    <Set name="cacheControl">max-age=3600,public</Set>
+                                                </New>
+                                            </Set>
+                                        </New>
+                                    </Item>
+                                    -->
+
+                                    <Item>
+                                        <New class="org.eclipse.jetty.webapp.WebAppContext">
+                                            <Set name="contextPath">/admin</Set>
+                                            <Set name="resourceBase"><SystemProperty name="classes.dir" default="."/>active-mq/admin</Set>
+                                        </New>
+                                    </Item>
+
+                                    <Item>
+                                        <New class="org.eclipse.jetty.server.handler.ContextHandler">
+                                            <Set name="contextPath">/api</Set>
+                                            <!--Set name="resourceBase"><SystemProperty name="jetty.home" default="."/>${classes.dir}/active-mq/api</Set-->
+                                            <Set name="resourceBase"><SystemProperty name="classes.dir" default="."/>active-mq/api</Set>
+                                        </New>
+                                    </Item>
+                                    <!--
+                                    <Item>
+                                        <New class="org.eclipse.jetty.server.handler.ContextHandler">
+                                            <Set name="contextPath">/</Set>
+                                            <Set name="resourceBase"><SystemProperty name="jetty.home" default="."/>/target/classes/active-mq</Set>
+                                            <Set name="handler">
+                                                <New class="org.eclipse.jetty.server.handler.ResourceHandler">
+                                                    <Set name="welcomeFiles">
+                                                        <Array type="String">
+                                                            <Item>index.html</Item>
+                                                        </Array>
+                                                    </Set>
+                                                    <Set name="cacheControl">max-age=3600,public</Set>
+                                                </New>
+                                            </Set>
+                                        </New>
+                                    </Item>
+                                    -->
+                                </Array>
+                            </Set>
+                        </New>
+                    </Item>
+                    <Item>
+                        <New id="DefaultHandler" class="org.eclipse.jetty.server.handler.DefaultHandler"/>
+                    </Item>
+                </Array>
+            </Set>
+        </New>
+    </Set>
+
+
+</Configure>
