@@ -1,8 +1,8 @@
 target
 .mule
+*.iml
 
-.idea
+.idea/
 activemq-data
 notes.txt
 src/main/resources/active-mq
-.idea/workspace.xml
